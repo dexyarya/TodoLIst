@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  background: linear-gradient(to right bottom, #e7e9e7, rgb(255, 255, 255));
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app-wrapper{
+  background-color: rgb(98, 110, 110);
+  min-width:450px;
+  min-height:650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px rgb(108, 109, 109);
+  margin-bottom:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header h1{
+  color: #fff;
+  text-align: center;
+  margin: 30px 0;
 }
+
+.task-input{
+  outline: none;
+  width: 280px;
+  padding:15px;
+  margin-right: 25px;
+  font-size: 20px;
+  border: rgb(2, 2, 2);
+  color: rgb(255, 255, 255);
+  background-color: rgb(13, 14, 14);
+  border-radius: 10px;
+  box-shadow:  3px 6px 40px rgba(22, 22, 22, 0.411);
+
+}
+
+.button-add{
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border:0;
+  color: #fff;
+  background-color: #0ba345e5;
+  cursor: pointer;
+  box-shadow:  3px 6px 40px rgba(22, 22, 22, 0.411);
+}
+
+.list-item{
+  display: flex;
+  margin: 20px 0;
+  border: rgb(2, 2, 2);
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+  box-shadow:  3px 6px 40px rgba(22, 22, 22, 0.411);
+}
+
+.button-complete,
+.button-delete,
+.button-edit{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.button-complete{
+  color: #05f739;
+  margin-right: 10px;
+}
+
+.button-edit{
+  color: #f5e507;
+  margin-right: 10px;
+}
+
+.button-delete{
+  color: #f50505;
+}
+
+.complete{
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #f72105;
+  opacity: 0.6;
+}
+
+.list{
+  width: 220px;
+  background-color:rgb(98, 110, 110);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus{
+  outline: none;
+}
+
