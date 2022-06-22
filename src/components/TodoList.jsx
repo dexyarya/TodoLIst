@@ -30,7 +30,7 @@ const TodoList = ({ todos, setTodos, setEditTodo }) => {
             className={`list ${todo.completed ? "complete" : ""}`}
             onChange={(e) => e.preventDefault()}
           />
-          //test//
+
           <div>
             <button
               className="button-complete"
